@@ -1,46 +1,27 @@
 
-# NodePop
+# Práctica del curso de DevOps
 
-Api for the iOS/Android apps.
+## Ejercicio 1:
 
-## Deploy
+La plataforma de hosting en donde se despliega la práctica es AWS.
 
-### Install dependencies  
+### La URL con el despliegue de la práctica es:  
     
-    npm install
+    http://ec2-54-212-244-125.us-west-2.compute.amazonaws.com
 
-### Configure  
+## Ejercicio 2:
 
-Review models/db.js to set database configuration
 
-### Init database
+### La IP del servidor donde se muestra la plantilla bootstrap es:
 
-    npm run installDB
+	http://54.212.244.125
 
-## Start
+Los archivos estáticos del templete de bootstrap se sirven con nginx. Para comprobar revisar la cabecera HTTP (buscar el header: X-Owner: https://github.com/JJLZ/) por ejemplo en:
 
-To start a single instance:
-    
-    npm start
+	http://54.212.244.125/img/portfolio-3.jpg
+	
 
-To start in cluster mode: 
-
-    npm run cluster  
-
-To start a single instance in debug mode:
-
-    npm run debug (including nodemon & debug log)
-
-## Test
-
-    npm test (pending to create, the client specified not to do now)
-
-## JSHint & JSCS
-
-    npm run hints
-
-## API v1 info
-
+## Uso de nodepop
 
 ### Base Path
 
